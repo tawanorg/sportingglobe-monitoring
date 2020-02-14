@@ -28,6 +28,7 @@ services:
       - grafana-storage:/var/lib/grafana
       # - ./grafana-plugins:/var/lib/grafana/plugins
     environment:
+      - GF_SERVER_ROOT_URL=https://monitoring-internal.sportingglobe.com.au
       - GF_SECURITY_ADMIN_USER=${GRAFANA_USERNAME}
       - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD}
       - GF_USERS_ALLOW_SIGN_UP=false
