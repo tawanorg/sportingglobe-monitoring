@@ -1,0 +1,56 @@
+{
+    "database":{
+        "influxDb":{
+            "host":"influxdb",
+            "port":8086,
+            "databaseName":"statusok",
+            "username":"admin",
+            "password":"admin"
+        }
+    },
+    "notifications":{
+        "mail":{
+            "smtpHost":"smtp.gmail.com",
+            "port":587,
+            "username":"tim.tawan@signaturegroup.com.au",
+            "password":"@@Root1234",
+            "from":"status@signaturegroup.com.au",
+            "to":"tim.tawan@signaturegroup.com.au"
+        }
+    },
+    "requests":[
+        {
+            "url":"https://www.sportingglobe.com.au/api/get-tipping-locations",
+            "requestType":"GET",
+            "headers":{
+            },
+            "params":{
+            },
+            "checkEvery": 30,
+            "responseCode": 200,
+            "responseTime":800
+        },
+        {
+            "url":"http://tipping.sportingglobe.com.au",
+            "requestType":"GET",
+            "headers":{
+            },
+            "params":{
+            },
+            "checkEvery":30,
+            "responseCode":200,
+            "responseTime":800
+        },
+        {
+            "url":"https://api.sportingglobe.com.au",
+            "requestType":"GET",
+            "headers":{
+            },
+            "params":{
+            },
+            "checkEvery":30,
+            "responseCode":200,
+            "responseTime":800
+        }
+    ]
+}
