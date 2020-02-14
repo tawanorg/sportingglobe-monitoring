@@ -51,6 +51,17 @@
             "checkEvery":30,
             "responseCode":200,
             "responseTime":800
+        },
+        {
+            "url":"https://api.sportingglobe.com.au",
+            "requestType":"GET",
+            "headers":{
+            },
+            "params":{
+            },
+            "checkEvery":30,
+            "responseCode":200,
+            "responseTime":800
         }
     ]
 }
